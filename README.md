@@ -58,3 +58,36 @@ void loop(void)
 I also have an ESP32 wroom 30 pin
 
 I don't remember how to program these from the arduino app.
+
+
+
+Before I lose track - here is how to reprogram my single key macropad.
+
+
+plugged in esp32 dev board.
+From port menu picked /dev/cu.SLAB_USBtoUART
+
+Need to make sure board in installed in Arduino. https://www.instructables.com/id/How-to-Set-Up-WeMos-TTgo-ESP32-Uno-D1-R32/
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
+There is a flash example (and others) here https://github.com/LilyGO/ESP32-MINI-32-V2.0/blob/master/Module_test/Blink/Blink.ino
+
+Installed the ESP 32 dev board driver for arduino. Selected board ESP32 Dev Module Chose Port /dev/cu.chbubserialfa130
+
+Selected board "Esp32 dev module"
+
+It's programmed and reporting on the serial, but I don't think pin 22 is the LED
+
+Installing required libraries for example code:
+
+#include <OneWire.h>
+#include <DallasTemperature.h>
+
+Using arduino 1.8.15 lib manager. 
+Installing OneWire by Paul Stoffregen
+Installing DallasTemperature by Miles Burton
+
+I've coped the example code into the flash example.
+I've connected the board up so that Vin,GND,and neighbouring pin 13 are being used.
+It is reporting a temperature of 27.37 - which I believe.
