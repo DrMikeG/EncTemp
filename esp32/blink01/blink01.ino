@@ -3,7 +3,7 @@
 
 #define LED_BUILTIN 2
 // Data wire is plugged into pin 2 on the Arduino
-#define ONE_WIRE_BUS 13 // maybe 13?
+#define ONE_WIRE_BUS 15 // maybe 13?
 
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 OneWire oneWire(ONE_WIRE_BUS);
